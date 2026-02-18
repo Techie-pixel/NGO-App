@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage"
+    android:background="@drawable/gradient1"
+    android:orientation="vertical">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/img"
+            android:contentDescription="NGO Logo" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Making the world a better place"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp">
+
+            <!-- Image Carousel Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp">
+
+                <ViewFlipper
+                    android:id="@+id/homefliper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoStart="true"
+                    android:flipInterval="3000"
+                    android:inAnimation="@android:anim/fade_in"
+                    android:outAnimation="@android:anim/fade_out">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gallery8" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gallery9" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gallery10" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gallery12" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gallery11" />
+
+                </ViewFlipper>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Section Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Services"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:paddingStart="4dp" />
+
+            <!-- Grid Menu -->
+            <GridLayout
+                android:alignmentMode="alignMargins"
+                android:useDefaultMargins="true"
+                android:padding="4dp"
+                android:rowCount="3"
+                android:columnCount="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Events Card -->
+                <LinearLayout
+                    android:id="@+id/events"
+                    android:background="@drawable/gradient_card"
+                    android:padding="14dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="145dp"
+                    android:layout_width="0dp"
+                    android:layout_margin="6dp"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/eventsimg"
+                        android:contentDescription="Events" />
+
+                    <TextView
+                        android:text="Events"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <!-- Gallery Card -->
+                <LinearLayout
+                    android:id="@+id/gallery1"
+                    android:background="@drawable/gradient_card"
+                    android:padding="14dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="145dp"
+                    android:layout_width="0dp"
+                    android:layout_margin="6dp"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/galleryngo"
+                        android:contentDescription="Gallery" />
+
+                    <TextView
+                        android:text="Gallery"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <!-- Volunteers Card -->
+                <LinearLayout
+                    android:id="@+id/volu"
+                    android:background="@drawable/gradient_card"
+                    android:padding="14dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="145dp"
+                    android:layout_width="0dp"
+                    android:layout_margin="6dp"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/volunteerngo"
+                        android:contentDescription="Volunteers" />
+
+                    <TextView
+                        android:text="Volunteers"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <!-- Contact Us Card -->
+                <LinearLayout
+                    android:id="@+id/contact"
+                    android:background="@drawable/gradient_card"
+                    android:padding="14dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="145dp"
+                    android:layout_width="0dp"
+                    android:layout_margin="6dp"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/contactus"
+                        android:contentDescription="Contact Us" />
+
+                    <TextView
+                        android:text="Contact Us"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <!-- Donation Box Card -->
+                <LinearLayout
+                    android:id="@+id/donationbox"
+                    android:background="@drawable/gradient_card"
+                    android:padding="14dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="145dp"
+                    android:layout_width="0dp"
+                    android:layout_margin="6dp"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/donationbox"
+                        android:contentDescription="Donation Box" />
+
+                    <TextView
+                        android:text="Donation Box"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <!-- Feedback Card -->
+                <LinearLayout
+                    android:id="@+id/feedback"
+                    android:background="@drawable/gradient_card"
+                    android:padding="14dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="145dp"
+                    android:layout_width="0dp"
+                    android:layout_margin="6dp"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/feedback"
+                        android:contentDescription="Feedback" />
+
+                    <TextView
+                        android:text="Feedback"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <include layout="@layout/navigationnav" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Orange circle emblem (centered, small) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#E8651A"
+        android:strokeWidth="2.5"
+        android:pathData="M54,38 m-12,0 a12,12 0,1 1,24 0 a12,12 0,1 1,-24 0" />
+
+    <!-- Cross inside circle -->
+    <path
+        android:fillColor="#E8651A"
+        android:pathData="M51.5,33 L56.5,33 L56.5,36 L59,36 L59,40 L56.5,40 L56.5,43 L51.5,43 L51.5,40 L49,40 L49,36 L51.5,36 Z" />
+
+    <!-- Small laurel left -->
+    <path
+        android:fillColor="#E8651A"
+        android:pathData="M45,44 Q42,42 43,38 Q44,41 46,43 Z" />
+    <path
+        android:fillColor="#E8651A"
+        android:pathData="M44,46 Q40,44 41,40 Q42,43 45,45 Z" />
+    <path
+        android:fillColor="#E8651A"
+        android:pathData="M44,48 Q39,47 40,43 Q41,46 44,47 Z" />
+
+    <!-- Small laurel right -->
+    <path
+        android:fillColor="#E8651A"
+        android:pathData="M63,44 Q66,42 65,38 Q64,41 62,43 Z" />
+    <path
+        android:fillColor="#E8651A"
+        android:pathData="M64,46 Q68,44 67,40 Q66,43 63,45 Z" />
+    <path
+        android:fillColor="#E8651A"
+        android:pathData="M64,48 Q69,47 68,43 Q67,46 64,47 Z" />
+
+    <!-- "N" letter -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M28,58 L28,75 L31.5,75 L31.5,63 L38,75 L41.5,75 L41.5,58 L38,58 L38,70 L31.5,58 Z" />
+
+    <!-- "G" letter -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M50,58 Q43,58 43,63 L43,70 Q43,75 50,75 L57,75 L57,67 L51,67 L51,70 L54,70 L54,72 L50,72 Q46.5,72 46.5,70 L46.5,63 Q46.5,61 50,61 L56,61 L56,58 Z" />
+
+    <!-- "O" letter -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M64,58 Q60,58 60,63 L60,70 Q60,75 64,75 L74,75 Q78,75 78,70 L78,63 Q78,58 74,58 Z M63.5,63 Q63.5,61 66,61 L72,61 Q74.5,61 74.5,63 L74.5,70 Q74.5,72 72,72 L66,72 Q63.5,72 63.5,70 Z" />
+
+</vector>

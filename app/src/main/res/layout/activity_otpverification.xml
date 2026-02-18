@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient1"
+    tools:context=".otpverification">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/img"
+            android:contentDescription="NGO Logo" />
+
+        <!-- Card Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="28dp"
+            android:layout_marginTop="24dp"
+            android:elevation="6dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify OTP"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#0077b6"
+                android:gravity="center" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/otpDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter the 6-digit OTP sent to your mobile number"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Phone Number Display -->
+            <TextView
+                android:id="@+id/phoneDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#0077b6"
+                android:layout_marginTop="8dp" />
+
+            <!-- OTP Input -->
+            <EditText
+                android:id="@+id/otpinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter 6-digit OTP"
+                android:textColorHint="#888888"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:maxLength="6"
+                android:gravity="center"
+                android:letterSpacing="0.3"
+                android:padding="16dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/gradient2" />
+
+            <!-- Verify Button -->
+            <Button
+                android:id="@+id/verifyotp"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Verify OTP"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/gradient_button_vibrant" />
+
+            <!-- Resend Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Didn't receive OTP? Resend in 60s"
+                android:textSize="13sp"
+                android:textColor="#888888"
+                android:gravity="center"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+        <!-- Bottom spacing -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</ScrollView>

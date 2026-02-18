@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient1"
+    tools:context=".phonelogin">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Back Arrow -->
+        <TextView
+            android:id="@+id/backToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="30dp"
+            android:text="← Back to Login"
+            android:textColor="#0077b6"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp" />
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img"
+            android:contentDescription="NGO Logo" />
+
+        <!-- Card Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="28dp"
+            android:layout_marginTop="24dp"
+            android:elevation="6dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile Login"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#0077b6"
+                android:gravity="center" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your mobile number to receive an OTP for verification"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Phone Input with Country Code -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="24dp"
+                android:gravity="center_vertical">
+
+                <!-- Country Code -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient2" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+                <!-- Phone Number Input -->
+                <EditText
+                    android:id="@+id/phoneinput"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Mobile Number"
+                    android:textColorHint="#888888"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="16dp"
+                    android:background="@drawable/gradient2" />
+
+            </LinearLayout>
+
+            <!-- Send OTP Button -->
+            <Button
+                android:id="@+id/sendotp"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Send OTP"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/gradient_button_vibrant" />
+
+            <!-- Status Text -->
+            <TextView
+                android:id="@+id/phoneStatusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="12dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Bottom spacing -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</ScrollView>

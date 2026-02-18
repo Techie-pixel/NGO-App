@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Application" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <!-- Splash theme — shows NGO logo on gradient, matches MainActivity -->
+    <style name="Theme.Application.Splash" parent="Base.Theme.Application">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>

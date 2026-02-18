@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Application" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Application" parent="Base.Theme.Application" />
+
+    <!-- Splash theme — shows NGO logo on gradient, matches MainActivity -->
+    <style name="Theme.Application.Splash" parent="Theme.Application">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>
