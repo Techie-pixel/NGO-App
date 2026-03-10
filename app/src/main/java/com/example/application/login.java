@@ -35,6 +35,10 @@ public class login extends AppCompatActivity {
 
     FirebaseAuth mauth;
 
+    // TODO: Replace with your admin email and password
+    private static final String ADMIN_EMAIL = "your_admin_email@gmail.com";
+    private static final String ADMIN_PASSWORD = "your_admin_password";
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,7 +107,7 @@ public class login extends AppCompatActivity {
                 login.setText("Logging in...");
 
                 // Admin login check
-                if (useremail.equals("Admin123@gmail.com") && userpass.equals("Admin1")) {
+                if (useremail.equals(ADMIN_EMAIL) && userpass.equals(ADMIN_PASSWORD)) {
                     loginProgress.setVisibility(View.GONE);
                     login.setEnabled(true);
                     login.setText("Login");
