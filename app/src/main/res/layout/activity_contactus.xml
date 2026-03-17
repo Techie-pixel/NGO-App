@@ -88,7 +88,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="📍 Address: Nagpur, India"
+                    android:text="📍 Address: Your City, India"
                     android:textSize="15sp"
                     android:textColor="@color/black"
                     android:layout_marginBottom="6dp" />
@@ -96,7 +96,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="📱 Mobile: 95189 06823"
+                    android:text="📱 Mobile: +91 98765 43210"
                     android:textSize="15sp"
                     android:textColor="@color/black"
                     android:layout_marginBottom="6dp" />
@@ -104,7 +104,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="✉️ Email: adityabokde33@gmail.com"
+                    android:text="✉️ Email: contact@ngo.org"
                     android:textSize="15sp"
                     android:textColor="@color/black" />
 

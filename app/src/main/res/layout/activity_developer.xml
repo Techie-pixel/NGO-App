@@ -18,7 +18,6 @@
         android:paddingTop="40dp"
         android:paddingBottom="10dp">
 
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -26,82 +25,79 @@
             android:orientation="vertical"
             android:layout_marginStart="12dp">
 
-
-
         </LinearLayout>
 
     </LinearLayout>
 
-   <!-- Scrollable Content -->
-   <ScrollView
-       android:layout_width="match_parent"
-       android:layout_height="0dp"
-       android:layout_weight="1">
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-      <LinearLayout
-          android:id="@+id/main"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:padding="20dp"
-          android:orientation="vertical"
-          android:gravity="center_horizontal">
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
 
-         <!-- Developer Image -->
-         <ImageView
-             android:id="@+id/teamPhoto"
-             android:layout_width="250dp"
-             android:layout_height="250dp"
-             android:layout_marginTop="10dp"
-             android:src="@drawable/developersgroup"
-             android:scaleType="centerCrop"
-             android:background="@drawable/circle_mask"
-             android:clipToOutline="true" />
+            <!-- Developer Image -->
+            <ImageView
+                android:id="@+id/teamPhoto"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/developer"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_mask"
+                android:clipToOutline="true" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meet the developer behind this app"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginTop="10dp"
+                android:textSize="19dp" />
 
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Meet the team behind this app"
-              android:textColor="@color/colorTextSecondary"
-              android:layout_marginTop="10dp"
-              android:textSize="19dp" />
+            <!-- Info Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:padding="24dp"
+                android:layout_marginTop="20dp"
+                android:elevation="6dp">
 
-         <!-- Info Card -->
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="vertical"
-             android:background="@drawable/card_background"
-             android:padding="24dp"
-             android:layout_marginTop="20dp"
-             android:elevation="6dp">
+                <TextView
+                    android:id="@+id/aboutHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="About Developer"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary" />
 
-             <TextView
-                 android:id="@+id/aboutHeading"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_gravity="center"
-                 android:text="About Developer"
-                 android:textSize="24sp"
-                 android:textStyle="bold"
-                 android:textColor="@color/colorPrimary" />
+                <TextView
+                    android:id="@+id/aboutDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hello! I am the developer behind this application.\n\nThis app was built with a vision to empower NGOs by providing essential tools like user authentication, a donation feature, and a smooth, intuitive user experience.\n\nMy goal is to support social causes by making technology accessible and meaningful for change-makers.\n\nI truly appreciate your support and hope this app adds value to your efforts.\n\nThank you for being a part of this journey.\nTogether, let\'s make a difference — one step at a time \uD83D\uDE0A."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="16dp"
+                    android:lineSpacingExtra="6dp"
+                    android:gravity="center" />
 
-             <TextView
-                 android:id="@+id/aboutDescription"
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:text="Hello! We are a team of four passionate developers who created this application.\n\nDevelopment Team:\n• Aditya Bokde\n• Anway Kavishwar\n• Saurabh Kalamkar\n• Himanshu Bahadure\n\nThis app was built with a shared vision to empower NGOs by providing essential tools like user authentication, a donation feature, and a smooth, intuitive user experience.\n\nOur collective goal is to support social causes by making technology accessible and meaningful for change-makers.\n\nWe truly appreciate your support and hope this app adds value to your efforts.\n\nThank you for being a part of this journey.\nTogether, let's make a difference — one step at a time 😊."
-                 android:textColor="@color/black"
-                 android:textSize="16sp"
-                 android:layout_marginTop="16dp"
-                 android:lineSpacingExtra="6dp"
-                 android:gravity="center" />
+            </LinearLayout>
 
-         </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
-      </LinearLayout>
-   </ScrollView>
-
-   <!-- Fixed Bottom Navigation -->
-   <include layout="@layout/navigationnav" />
+    <!-- Fixed Bottom Navigation -->
+    <include layout="@layout/navigationnav" />
 </LinearLayout>
