@@ -1,4 +1,4 @@
-# 🌍 NGO Management App
+# 🤝 NGO App
 
 A comprehensive Android application for NGO (Non-Governmental Organization) management that connects donors, volunteers, and administrators on a single platform.
 
@@ -22,6 +22,16 @@ A comprehensive Android application for NGO (Non-Governmental Organization) mana
 - **Message Center** — View contact queries, feedback & volunteer requests
 - **Gallery Management** — Upload and manage photos
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="screenshots/home_screen.png" alt="Home Screen" width="250"/>
+  &nbsp;&nbsp;
+  <img src="screenshots/signup_screen.png" alt="Sign Up Screen" width="250"/>
+  &nbsp;&nbsp;
+  <img src="screenshots/login_screen.png" alt="Login Screen" width="250"/>
+</p>
+
 ## 🛠️ Tech Stack
 
 | Technology | Usage |
@@ -32,10 +42,6 @@ A comprehensive Android application for NGO (Non-Governmental Organization) mana
 | **Firebase Realtime Database** | Data storage for users, donations, events, gallery, feedback, etc. |
 | **Glide** | Image loading and caching |
 | **Dummy Payment** | Simulated donation payment flow |
-
-## 📸 Screenshots
-
-[Add your app screenshots here]
 
 ## 🚀 Installation
 
