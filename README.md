@@ -60,6 +60,3 @@ A comprehensive Android application for NGO (Non-Governmental Organization) mana
 - Target SDK: API 35 (Android 15)
 - Java 11
 
-## 📄 License
-
-This project is open source and available for learning and contribution purposes.
