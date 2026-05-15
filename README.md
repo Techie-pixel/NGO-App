@@ -2,9 +2,9 @@
 
 A comprehensive Android application for NGO (Non-Governmental Organization) management that connects donors, volunteers, and administrators on a single platform.
 
-## ✨ Features
+## Features
 
-### 👤 User Features
+### User Features
 - **Authentication** — Email/Password & Phone OTP login with Firebase Auth
 - **Donations** — Dummy payment flow with amount selection
 - **Volunteer Registration** — Join as a volunteer for NGO activities
@@ -14,7 +14,7 @@ A comprehensive Android application for NGO (Non-Governmental Organization) mana
 - **Contact Us** — Get in touch with the NGO team
 - **Profile** — View and manage user profile
 
-### 🔐 Admin Features
+### Admin Features
 - **Admin Dashboard** — Centralized control panel
 - **User Management** — View all registered users
 - **Donation Tracking** — Monitor all donations
@@ -22,7 +22,7 @@ A comprehensive Android application for NGO (Non-Governmental Organization) mana
 - **Message Center** — View contact queries, feedback & volunteer requests
 - **Gallery Management** — Upload and manage photos
 
-## 📸 Screenshots
+## Screenshots
 
 <p align="center">
   <img src="screenshots/home_screen.png" alt="Home Screen" width="250"/>
@@ -32,7 +32,7 @@ A comprehensive Android application for NGO (Non-Governmental Organization) mana
   <img src="screenshots/login_screen.png" alt="Login Screen" width="250"/>
 </p>
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Usage |
 |------------|-------|
@@ -43,7 +43,7 @@ A comprehensive Android application for NGO (Non-Governmental Organization) mana
 | **Glide** | Image loading and caching |
 | **Dummy Payment** | Simulated donation payment flow |
 
-## 🚀 Installation
+## Installation
 
 1. Clone the repository
 2. Open in Android Studio
@@ -53,7 +53,7 @@ A comprehensive Android application for NGO (Non-Governmental Organization) mana
 6. Set your admin credentials in `login.java` (replace the `TODO` placeholders)
 7. Build and run on Android device/emulator
 
-## 📋 Requirements
+## Requirements
 
 - Android Studio Arctic Fox or later
 - Minimum SDK: API 24 (Android 7.0)
